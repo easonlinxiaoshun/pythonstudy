@@ -37,8 +37,8 @@ text='''
 
 #创建element对象
 html=etree.HTML(text)
-el_list=html.xpath('/div[@class=""]')
-# print(html)
+el_list=html.xpath('//div/@class')
+print(el_list)
 # print(dir(html))
 print(html.xpath('//div[@class="j-err u-err j-pwd-valid"]/span/text()'))
 print(html.xpath('//div[@class="j-err u-err j-pwd-valid"]/span/text()')[0])
